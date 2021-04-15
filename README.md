@@ -53,9 +53,11 @@ module.exports = {
 };
 ```
 
-### Usage with prettier:
+### prettier:
 
-Run this:
+The prettier configuration uses `eslint-plugin-prettier`.
+
+Install the dependencies by running:
 
 ```bash
 npm i -D prettier eslint-plugin-prettier eslint-config-prettier
@@ -84,12 +86,8 @@ module.exports = {
     parserOptions: {
         project: path.join(__dirname, 'tsconfig.json') // The path to your tsconfig.json
     },
-    plugins: ['@euberdeveloper', 'prettier'],
-    extends: [
-        'plugin:@euberdeveloper/typescript',
-        'plugin:@euberdeveloper/mocha',
-        'plugin:prettier/recommended'
-    ]
+    plugins: ['@euberdeveloper'],
+    extends: ['plugin:@euberdeveloper/prettier']
 };
 ```
 
