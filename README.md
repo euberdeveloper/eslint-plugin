@@ -3,42 +3,61 @@ My personal eslint configurations.
 
 ## Brief description
 
-An eslint configuration, that uses the standard `@typescript-eslint/eslint-plugin` for the Typescript rules and
-`eslint-plugin-mocha` for the mocha rules.
-## How to use it
+My eslint plugin that contains all my personal configurations.
+## Configurations
 
-### Install the dependencies:
+First of all install eslint and this plugin:
 
 ```bash
-# eslint with the typescript configuration
-npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
-
-# eslint mocha plugin
-npm i -D eslint-plugin-mocha
-
-# this eslint configuration
-npm i -D @euberdeveloper/eslint-config-typescript
+npm i -D eslint @euberdeveloper/eslint-plugin
 ```
 
-### Add this `.eslintrc.js` file to your root:
+### Typescript
+
+The typescript configuration uses the rules from ` @typescript-eslint/eslint-plugin`.
+
+Install the dependencies by running:
+
+```bash
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+The `.eslintrc.js` file should be something such as:
 
 ```js
-const path = require('path');
-
 module.exports = {
     parserOptions: {
         project: path.join(__dirname, 'tsconfig.json') // The path to your tsconfig.json
     },
-    extends: [ '@euberdeveloper/typescript' ]
+    plugins: ['@euberdeveloper'],
+    extends: ['plugin:@euberdeveloper/typescript']
 };
 ```
 
-### If you want to use it with prettier
+### mocha
+
+The mocha configuration uses the rules from `eslint-plugin-mocha`.
+
+Install the dependencies by running:
+
+```bash
+npm i -D eslint-plugin-mocha
+```
+
+The `.eslintrc.js` file should be something such as:
+
+```js
+module.exports = {
+    plugins: ['@euberdeveloper'],
+    extends: ['plugin:@euberdeveloper/mocha']
+};
+```
+
+### Usage with prettier:
 
 Run this:
 
 ```bash
-# prettier with its eslint connector
 npm i -D prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
@@ -65,14 +84,15 @@ module.exports = {
     parserOptions: {
         project: path.join(__dirname, 'tsconfig.json') // The path to your tsconfig.json
     },
-    plugins: ['prettier'],
+    plugins: ['@euberdeveloper', 'prettier'],
     extends: [
-        '@euberdeveloper/typescript',
+        'plugin:@euberdeveloper/typescript',
+        'plugin:@euberdeveloper/mocha',
         'plugin:prettier/recommended'
     ]
 };
 ```
 
-### Now you can just use eslint to lint your code
+## Tips
 
 You can also add some scripts to the `package.json` in order to have it always ready.
