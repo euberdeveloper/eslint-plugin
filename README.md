@@ -25,6 +25,8 @@ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 The `.eslintrc.js` file should be something such as:
 
 ```js
+const path = require('path');
+
 module.exports = {
     parserOptions: {
         project: path.join(__dirname, 'tsconfig.json') // The path to your tsconfig.json
@@ -47,6 +49,8 @@ npm i -D eslint-plugin-mocha
 The `.eslintrc.js` file should be something such as:
 
 ```js
+const path = require('path');
+
 module.exports = {
     plugins: ['@euberdeveloper'],
     extends: ['plugin:@euberdeveloper/mocha']
