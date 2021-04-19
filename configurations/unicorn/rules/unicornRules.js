@@ -44,7 +44,7 @@ module.exports = {
     // Enforce a case style for filenames. Recommended.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
     "unicorn/filename-case": [
-        error,
+        'error',
         {
             cases: {
                 kebabCase: true,
