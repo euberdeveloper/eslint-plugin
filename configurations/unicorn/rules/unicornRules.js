@@ -202,10 +202,6 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md
     'unicorn/prefer-default-parameters': ['error'],
 
-    // Prefer .addEventListener() and .removeEventListener() over on-functions. Recommended. Fixable.
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/CIAONE.md
-    'unicorn/CIAONE': ['error'],
-
     // Prefer Node#append() over Node#appendChild(). Recommended. Fixable.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
     'unicorn/prefer-dom-node-append': ['error'],
