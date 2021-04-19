@@ -116,7 +116,7 @@ module.exports = {
 
     // Disallow new Array(). Recommended. Fixable.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-array.md
-    'unicorn/no-new-array': ['error'],
+    // 'unicorn/no-new-array': ['error'],
 
     // Enforce the use of Buffer.from() and Buffer.alloc() instead of the deprecated new Buffer(). Recommended. Fixable.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-buffer.md
