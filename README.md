@@ -14,7 +14,7 @@ npm i -D eslint @euberdeveloper/eslint-plugin
 
 ### Typescript
 
-The typescript configuration uses the rules from ` @typescript-eslint/eslint-plugin`.
+The typescript configuration uses the rules from `@typescript-eslint/eslint-plugin`.
 
 Install the dependencies by running:
 
@@ -33,6 +33,27 @@ module.exports = {
     },
     plugins: ['@euberdeveloper'],
     extends: ['plugin:@euberdeveloper/typescript']
+};
+```
+
+### unicorn
+
+The configuration uses the rules from `eslint-plugin-unicorn`.
+
+Install the dependencies by running:
+
+```bash
+npm i -D eslint-plugin-unicorn
+```
+
+The `.eslintrc.js` file should be something such as:
+
+```js
+const path = require('path');
+
+module.exports = {
+    plugins: ['@euberdeveloper'],
+    extends: ['plugin:@euberdeveloper/unicorn']
 };
 ```
 

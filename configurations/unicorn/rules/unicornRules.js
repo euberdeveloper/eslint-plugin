@@ -161,4 +161,148 @@ module.exports = {
     // Disallow number literals with zero fractions or dangling dots. Recommended. Fixable.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-zero-fractions.md
     'unicorn/no-zero-fractions': ['error'],
+
+    // Enforce proper case for numeric literals. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/number-literal-case.md
+    'unicorn/number-literal-case': ['error'],
+
+    // Enforce the style of numeric separators by correctly grouping digits. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/numeric-separators-style.md
+    'unicorn/numeric-separators-style': ['error'],
+
+    // Prefer .addEventListener() and .removeEventListener() over on-functions. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
+    'unicorn/prefer-add-event-listener': ['error'],
+
+    // Prefer .find(…) over the first element from .filter(…). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
+    'unicorn/prefer-array-find': ['error'],
+
+    // Prefer .flatMap(…) over .map(…).flat(). Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat.md
+    'unicorn/prefer-array-flat': ['error'],
+
+    // Prefer Array#flat() over legacy techniques to flatten arrays. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md
+    'unicorn/prefer-array-flat-map': ['error'],
+
+    // Prefer Array#indexOf() over Array#findIndex() when looking for the index of an item. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-index-of.md
+    'unicorn/prefer-array-index-of': ['error'],
+
+    // Prefer .some(…) over .find(…). Recommended.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-some.md
+    'unicorn/prefer-array-some': ['error'],
+
+    // Prefer Date.now() to get the number of milliseconds since the Unix Epoch. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md
+    'unicorn/prefer-date-now': ['error'],
+
+    // Prefer default parameters over reassignment. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md
+    'unicorn/prefer-default-parameters': ['error'],
+
+    // Prefer .addEventListener() and .removeEventListener() over on-functions. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/CIAONE.md
+    'unicorn/CIAONE': ['error'],
+
+    // Prefer Node#append() over Node#appendChild(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
+    'unicorn/prefer-dom-node-append': ['error'],
+
+    // Prefer using .dataset on DOM elements over .setAttribute(…). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-dataset.md
+    'unicorn/prefer-dom-node-dataset': ['error'],
+
+    // Prefer childNode.remove() over parentNode.removeChild(childNode). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md
+    'unicorn/prefer-dom-node-remove': ['error'],
+
+    // Prefer .textContent over .innerText. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-text-content.md
+    'unicorn/prefer-dom-node-text-content': ['error'],
+
+    // Prefer .includes() over .indexOf() and Array#some() when checking for existence or non-existence. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
+    'unicorn/prefer-includes': ['error'],
+
+    // Prefer KeyboardEvent#key over KeyboardEvent#keyCode. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
+    'unicorn/prefer-keyboard-event-key': ['error'],
+
+    // Enforce the use of Math.trunc instead of bitwise operators. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
+    'unicorn/prefer-math-trunc': ['error'],
+
+    // Prefer .before() over .insertBefore(), .replaceWith() over .replaceChild(), prefer one of .before(), .after(), .append() or .prepend() over insertAdjacentText() and insertAdjacentElement(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
+    'unicorn/prefer-modern-dom-apis': ['error'],
+
+    // Prefer negative index over .length - index for {String,Array,TypedArray}#slice() and Array#splice(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md
+    'unicorn/prefer-negative-index': ['error'],
+
+    // Prefer Number static properties over global ones. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
+    'unicorn/prefer-number-properties': ['error'],
+
+    // Prefer omitting the catch binding parameter. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md
+    'unicorn/prefer-optional-catch-binding': ['error'],
+
+    // Prefer .querySelector() over .getElementById(), .querySelectorAll() over .getElementsByClassName() and .getElementsByTagName(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-query-selector.md
+    'unicorn/prefer-query-selector': ['error'],
+
+    // Prefer Reflect.apply() over Function#apply(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md
+    'unicorn/prefer-reflect-apply': ['error'],
+
+    // Prefer RegExp#test() over String#match() and RegExp#exec(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md
+    'unicorn/prefer-regexp-test': ['error'],
+
+    // Prefer Set#has() over Array#includes() when checking for existence or non-existence. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-has.md
+    'unicorn/prefer-set-has': ['error'],
+
+    // Prefer the spread operator over Array.from(…), Array#concat(…) and Array#slice(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
+    'unicorn/prefer-spread': ['error'],
+
+    // Prefer String#replaceAll() over regex searches with the global flag. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
+    'unicorn/prefer-string-replace-all': ['error'],
+
+    // Prefer String#slice() over String#substr() and String#substring(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-slice.md
+    'unicorn/prefer-string-slice': ['error'],
+
+    // Prefer String#startsWith() & String#endsWith() over RegExp#test(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md
+    'unicorn/prefer-string-starts-ends-with': ['error'],
+
+    // Prefer String#trimStart() / String#trimEnd() over String#trimLeft() / String#trimRight(). Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-trim-start-end.md
+    'unicorn/prefer-string-trim-start-end': ['error'],
+
+    // Prefer ternary expressions over simple if-else statements. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md
+    'unicorn/prefer-ternary': ['error'],
+
+    // Enforce throwing TypeError in type checking conditions. Recommended. Fixable
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md
+    'unicorn/prefer-type-error': ['error'],
+
+    // Prevent abbreviations. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
+    // 'unicorn/prevent-abbreviations': ['error'],
+
+    // Enforce better string content. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md
+    // 'unicorn/string-content': ['error'],
+
+    // Require new when throwing an error. Recommended. Fixable.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
+    'unicorn/throw-new-error': ['error']
 };
