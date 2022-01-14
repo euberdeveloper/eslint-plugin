@@ -118,7 +118,7 @@ module.exports = {
     // Disallow unused variables. Recommended.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { "argsIgnorePattern": "^_" }],
+    '@typescript-eslint/no-unused-vars': ['error', { 'argsIgnorePattern': '^_', 'varsIgnorePattern': '^_' }],
 
     // Disallow the use of variables before they are defined
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
