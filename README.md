@@ -4,12 +4,19 @@ My personal eslint configurations.
 ## Brief description
 
 My eslint plugin that contains all my personal configurations.
+
 ## Configurations
 
 First of all install eslint and this plugin:
 
 ```bash
 npm i -D eslint @euberdeveloper/eslint-plugin
+```
+
+If you want also to add the codeframe formatter:
+
+```bash
+npm i -D eslint-formatter-codeframe
 ```
 
 ### Typescript
