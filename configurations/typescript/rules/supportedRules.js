@@ -167,7 +167,10 @@ module.exports = {
 
     // Requires Promise-like values to be handled appropriately. Recommended.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-floating-promises.md
-    '@typescript-eslint/no-floating-promises': ['error'],
+    '@typescript-eslint/no-floating-promises': ['error', {
+        ignoreVoid: true,
+        ignoreIIFE: true
+    }],
 
     // Disallow iterating over an array with a for-in loop. Recommended.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-for-in-array.md
