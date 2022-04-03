@@ -21,5 +21,6 @@ jobs:
         run: node ./scripts/make-full.js
 
       - name: Publish full package to NPM
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
