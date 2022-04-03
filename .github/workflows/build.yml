@@ -1,0 +1,25 @@
+name: Publish
+on: [release]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Publish package to NPM
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Adjust package for full version
+        run: node ./scripts/make-full.js
+
+      - name: Publish full package to NPM
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
