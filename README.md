@@ -1,33 +1,17 @@
 # @euberdeveloper/eslint-plugin
-My personal eslint configurations.
+Euber's personal eslint configurations.
 
 ## Brief description
 
 My eslint plugin that contains all my personal configurations.
 
-## Configurations
+## Notes
 
-First of all install eslint and this plugin:
-
-```bash
-npm i -D eslint @euberdeveloper/eslint-plugin
-```
-
-If you want also to add the codeframe formatter:
-
-```bash
-npm i -D eslint-formatter-codeframe
-```
+This package has also a **slim** version in `@euberdeveloper/eslint-plugin-slim` package, that contains only the configuration, while the other dev-dependencies (eslint, prettier, eslint plugins, ...) have to be installed manually. Instead, in this plugin, the dependencies are all installed by default, this is because with the upgrading of eslint or other dependencies these configuration could stop working.
 
 ### Typescript
 
 The typescript configuration uses the rules from `@typescript-eslint/eslint-plugin`.
-
-Install the dependencies by running:
-
-```bash
-npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
 
 The `.eslintrc.js` file should be something such as:
 
@@ -47,12 +31,6 @@ module.exports = {
 
 The configuration uses the rules from `eslint-plugin-unicorn`.
 
-Install the dependencies by running:
-
-```bash
-npm i -D eslint-plugin-unicorn
-```
-
 The `.eslintrc.js` file should be something such as:
 
 ```js
@@ -66,14 +44,6 @@ module.exports = {
 
 ### mocha
 
-The mocha configuration uses the rules from `eslint-plugin-mocha`.
-
-Install the dependencies by running:
-
-```bash
-npm i -D eslint-plugin-mocha
-```
-
 The `.eslintrc.js` file should be something such as:
 
 ```js
@@ -86,14 +56,6 @@ module.exports = {
 ```
 
 ### prettier:
-
-The prettier configuration uses `eslint-plugin-prettier`.
-
-Install the dependencies by running:
-
-```bash
-npm i -D prettier eslint-plugin-prettier eslint-config-prettier
-```
 
 Add this `.prettierrc.js` file to your root:
 
