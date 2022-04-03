@@ -7,8 +7,8 @@ const packageJson = require(packageJsonPath);
 packageJson.name = 'eslint-plugin-euberdeveloper-eslint';
 fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
-const devDependenciesPath = path.join(__dirname, 'dev-dependencies.txt');
-const devDependencies = fs.readFileSync(devDependenciesPath, 'utf8');
-const devDependenciesText = devDependencies.split('\n').map(line => line.trim()).filter(line => !!line).join(' ');
-const devDependenciesCommand = `npm i -D ${devDependenciesText}`;
-childProcess.execSync(devDependenciesCommand);
+const dependenciesPath = path.join(__dirname, 'dependencies.txt');
+const dependencies = fs.readFileSync(dependenciesPath, 'utf8');
+const dependenciesText = dependencies.split('\n').map(line => line.trim()).filter(line => !!line).join(' ');
+const dependenciesCommand = `npm i -${dependenciesText}`;
+childProcess.execSync(dependenciesCommand);
