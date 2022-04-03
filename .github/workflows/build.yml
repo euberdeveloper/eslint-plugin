@@ -1,5 +1,8 @@
 name: Publish
-on: [release]
+on:
+  push:
+      branches:
+        - main
 
 jobs:
   build:
@@ -13,6 +16,10 @@ jobs:
           node-version: 16.x
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Get version of the project
+        id: project-version
+        uses: "euberdeveloper/ga-project-version@main"
+
       - name: Publish package to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -24,3 +31,10 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Add release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ steps.project-version.outputs.version }}"
+          prerelease: false
