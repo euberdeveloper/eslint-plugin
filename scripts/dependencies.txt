@@ -1,9 +1,0 @@
-eslint
-eslint-formatter-codeframe
-@typescript-eslint/eslint-plugin
-@typescript-eslint/parser
-eslint-plugin-unicorn
-eslint-plugin-mocha
-prettier 
-eslint-plugin-prettier 
-eslint-config-prettier

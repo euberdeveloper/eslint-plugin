@@ -1,6 +1,6 @@
 {
   "name": "@euberdeveloper/eslint-plugin",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "description": "Euber's configurations for eslint",
   "main": "index.js",
   "repository": {
@@ -29,5 +29,15 @@
   "bugs": {
     "url": "https://github.com/euberdeveloper/eslint-plugin/issues"
   },
-  "homepage": "https://github.com/euberdeveloper/eslint-plugin#readme"
+  "homepage": "https://github.com/euberdeveloper/eslint-plugin#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-formatter-codeframe": "^7.32.1",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "prettier": "^2.6.2"
+  }
 }
