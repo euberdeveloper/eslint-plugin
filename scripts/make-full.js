@@ -4,7 +4,7 @@ const childProcess = require('child_process');
 
 const packageJsonPath = path.join(__dirname, '..', 'package.json');
 const packageJson = require(packageJsonPath);
-packageJson.name = 'eslint-plugin-euberdeveloper-full';
+packageJson.name = 'eslint-plugin-euberdeveloper-eslint';
 fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
 const devDependenciesPath = path.join(__dirname, 'dev-dependencies.txt');
