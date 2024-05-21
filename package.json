@@ -1,6 +1,6 @@
 {
   "name": "@euberdeveloper/eslint-plugin",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Euber's configurations for eslint",
   "main": "index.js",
   "repository": {
