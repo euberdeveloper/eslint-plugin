@@ -1,6 +1,6 @@
-'use strict';
+import type { Linter } from "eslint";
 
-module.exports = {
+export default {
     // Improve regexes by making them shorter, consistent, and safer. Recommended. Fixable.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md
     'unicorn/better-regex': ['error'],
@@ -301,4 +301,4 @@ module.exports = {
     // Require new when throwing an error. Recommended. Fixable.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
     'unicorn/throw-new-error': ['error']
-};
+} as Linter.RulesRecord;
