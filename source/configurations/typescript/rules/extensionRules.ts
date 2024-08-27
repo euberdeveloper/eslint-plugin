@@ -1,4 +1,4 @@
-import { Linter } from "eslint";
+import type { Linter } from "eslint";
 
 export default {
     // Enforce consistent brace style for blocks. Fixable.

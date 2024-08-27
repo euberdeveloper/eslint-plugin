@@ -1,9 +1,10 @@
+import type { Linter } from 'eslint';
+
 import typescriptParser from '@typescript-eslint/parser';
 import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 
 import supportedRules from './rules/supportedRules';
 import extensionRules from './rules/extensionRules';
-import { Linter } from 'eslint';
 
 export default [
     {
