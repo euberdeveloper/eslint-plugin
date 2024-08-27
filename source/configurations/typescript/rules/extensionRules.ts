@@ -1,3 +1,5 @@
+import { Linter } from "eslint";
+
 export default {
     // Enforce consistent brace style for blocks. Fixable.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
@@ -155,4 +157,4 @@ export default {
         'named': 'never',
         'asyncArrow': 'always'
     }]
-};
+} as Linter.RulesRecord;

@@ -1,3 +1,5 @@
+import type { Linter } from "eslint";
+
 export default {
     // Require that member overloads be consecutive. Recommended.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md
@@ -379,4 +381,4 @@ export default {
     // errors for any two overloads that could be unified into one by using a union or an optional/rest parameter.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md
     '@typescript-eslint/unified-signatures': ['error']
-};
+} as Linter.RulesRecord;
