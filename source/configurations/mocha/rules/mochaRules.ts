@@ -1,6 +1,6 @@
-'use strict';
+import type { Linter } from "eslint";
 
-module.exports = {
+export default {
     // Enforces handling of callbacks for async tests. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/handle-done-callback.md
     "mocha/handle-done-callback": ["error", {"ignoreSkipped": true}],
@@ -84,4 +84,4 @@ module.exports = {
     // Match test descriptions against a pre-configured regular expression.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/valid-test-description.md
     // 'mocha/valid-test-description': ['error']
-};
+} as Linter.Config;
